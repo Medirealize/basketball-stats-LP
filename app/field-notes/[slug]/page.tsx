@@ -98,7 +98,7 @@ export default async function FieldNoteArticlePage({ params }: PageProps) {
           </Link>
           <span className="mx-2">·</span>
           <Link href="/" className="hover:text-[#737373] transition-colors">
-            LP へ
+            トップページへ
           </Link>
         </p>
       </article>

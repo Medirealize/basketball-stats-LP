@@ -64,7 +64,7 @@ export default function FieldNotesPage() {
 
         <p className="mt-16 text-center text-xs text-[#525252]">
           <Link href="/" className="hover:text-[#737373] transition-colors">
-            ← LP に戻る
+            ← トップページに戻る
           </Link>
         </p>
       </div>
