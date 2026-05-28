@@ -1,3 +1,6 @@
+"use client"
+
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Crown, Check } from "lucide-react"
 
@@ -10,6 +13,8 @@ const premiumFeatures = [
 ]
 
 export function PremiumSection() {
+  const [isYearly, setIsYearly] = useState(true)
+
   return (
     <section className="py-12 lg:py-20 bg-[#0D0D0D]">
       <div className="w-full max-w-[430px] lg:max-w-xl mx-auto px-6">
@@ -35,16 +40,44 @@ export function PremiumSection() {
 
         {/* Pricing Card */}
         <div className="bg-[#1A1A1A] border-2 border-[#FBBF24]/50 rounded-2xl p-6 gold-glow">
+          {/* Toggle */}
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <button
+              onClick={() => setIsYearly(false)}
+              className={`px-4 py-2 rounded-xl text-sm font-semibold transition-colors ${
+                !isYearly
+                  ? "bg-[#FBBF24] text-[#0D0D0D]"
+                  : "bg-[#2A2A2A] text-[#737373]"
+              }`}
+            >
+              月額プラン
+            </button>
+            <button
+              onClick={() => setIsYearly(true)}
+              className={`px-4 py-2 rounded-xl text-sm font-semibold transition-colors ${
+                isYearly
+                  ? "bg-[#FBBF24] text-[#0D0D0D]"
+                  : "bg-[#2A2A2A] text-[#737373]"
+              }`}
+            >
+              年額プラン
+            </button>
+          </div>
+
           {/* Price */}
           <div className="text-center mb-6">
             <div className="text-4xl font-black text-[#F5F5F5]">
-              ¥6,000
-              <span className="text-lg font-normal text-[#737373]">/年</span>
+              {isYearly ? "¥6,000" : "¥680"}
+              <span className="text-lg font-normal text-[#737373]">
+                {isYearly ? "/年" : "/月"}
+              </span>
             </div>
-            <div className="mt-2">
-              <p className="text-sm text-[#737373]">月換算 ¥500</p>
-              <p className="text-sm text-[#FBBF24] font-semibold">年間 ¥2,160 お得！</p>
-            </div>
+            {isYearly && (
+              <div className="mt-2">
+                <p className="text-sm text-[#737373]">月換算 ¥500</p>
+                <p className="text-sm text-[#FBBF24] font-semibold">年間 ¥2,160 お得！</p>
+              </div>
+            )}
           </div>
 
           {/* CTA Button */}
