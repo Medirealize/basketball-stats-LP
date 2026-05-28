@@ -145,7 +145,7 @@ export function HeroSection() {
                 asChild
                 className="w-full bg-[#F97316] hover:bg-[#EA580C] text-white font-bold rounded-2xl px-8 py-6 text-base orange-glow"
               >
-                <a href="https://bscore.medirealize.jp/ja/login">無料で始める</a>
+                <a href="https://bscore.medirealize.jp/ja/login?guest=1">無料で試す</a>
               </Button>
               <Button
                 asChild
