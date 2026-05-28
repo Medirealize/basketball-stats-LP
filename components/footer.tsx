@@ -11,9 +11,9 @@ export function Footer() {
             <Image
               src="/images/icon-512.webp"
               alt="Basketball Score App"
-              width={40}
-              height={40}
-              className="rounded-lg"
+              width={64}
+              height={64}
+              className="rounded-xl"
             />
             <h3 className="text-xl font-bold text-[#F5F5F5]">Basketball Score</h3>
           </div>

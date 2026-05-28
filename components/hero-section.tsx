@@ -118,11 +118,11 @@ export function HeroSection() {
               <Image
                 src="/images/icon-512.webp"
                 alt="Basketball Score App"
-                width={80}
-                height={80}
-                className="rounded-2xl mb-3"
+                width={180}
+                height={180}
+                className="rounded-3xl mb-4 shadow-2xl"
               />
-              <h2 className="text-2xl lg:text-3xl font-bold text-[#F5F5F5]">
+              <h2 className="text-3xl lg:text-4xl font-bold text-[#F5F5F5]">
                 Basketball Score
               </h2>
             </div>
@@ -141,21 +141,19 @@ export function HeroSection() {
 
             {/* CTA Buttons */}
             <div className="mt-10 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-              <a href="https://bscore.medirealize.jp/ja/login">
-                <Button
-                  className="w-full bg-[#F97316] hover:bg-[#EA580C] text-white font-bold rounded-2xl px-8 py-6 text-base orange-glow"
-                >
-                  無料で始める
-                </Button>
-              </a>
-              <a href="#how-it-works">
-                <Button
-                  variant="outline"
-                  className="w-full bg-transparent border-white/30 text-white hover:bg-white/10 font-bold rounded-2xl px-8 py-6 text-base"
-                >
-                  使い方を見る
-                </Button>
-              </a>
+              <Button
+                asChild
+                className="w-full bg-[#F97316] hover:bg-[#EA580C] text-white font-bold rounded-2xl px-8 py-6 text-base orange-glow"
+              >
+                <a href="https://bscore.medirealize.jp/ja/login">無料で始める</a>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="w-full bg-transparent border-white/30 text-white hover:bg-white/10 font-bold rounded-2xl px-8 py-6 text-base"
+              >
+                <a href="#how-it-works">使い方を見る</a>
+              </Button>
             </div>
 
             {/* Trust Badges */}
