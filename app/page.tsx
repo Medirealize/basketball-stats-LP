@@ -7,6 +7,7 @@ import { ComparisonSection } from "@/components/comparison-section"
 import { TargetAudienceSection } from "@/components/target-audience-section"
 import { StatsPreview } from "@/components/stats-preview"
 import { PremiumSection } from "@/components/premium-section"
+import { DevelopmentStorySection } from "@/components/development-story-section"
 import { FaqSection } from "@/components/faq-section"
 import { Footer } from "@/components/footer"
 
@@ -22,6 +23,7 @@ export default function Home() {
       <TargetAudienceSection />
       <StatsPreview />
       <PremiumSection />
+      <DevelopmentStorySection />
       <FaqSection />
       <Footer />
     </main>

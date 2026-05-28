@@ -4,7 +4,7 @@ import { groupFieldNotesByDate } from "@/lib/devlog/entries"
 
 export const metadata: Metadata = {
   title: "フィールドノート | Basketball Score LP",
-  description: "制作の番外編。日付順の開発メモ。",
+  description: "制作の番外編。日付順の開発秘話。",
   robots: { index: false, follow: false },
 }
 
@@ -19,8 +19,8 @@ export default function FieldNotesPage() {
         </p>
         <h1 className="mt-3 text-3xl font-black">フィールドノート</h1>
         <p className="mt-4 text-sm leading-relaxed text-[#737373]">
-          v0 から Cursor、GitHub、Vercel、Supabase まで──この LP を育てた途中経過を、日付ごとに残した制作日誌です。
-          再現用の手順書ではありません。読んだあなた専用の、ベンチ裏の話です。
+          実装メモではなく、判断の背景だけを残した日誌です。どのボタンを目立たせたか、なぜその文言にしたか、
+          試合中の使われ方を想像しながら決めたプロセスを日付ごとにまとめています。
         </p>
 
         <div className="mt-12 space-y-14">

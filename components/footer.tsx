@@ -48,19 +48,17 @@ export function Footer() {
           >
             特定商取引法に基づく表記
           </Link>
-        </div>
-
-        {/* Copyright — © をクリックすると番外編へ */}
-        <p className="text-center text-xs text-[#525252]">
           <Link
             href="/field-notes"
-            className="text-[#3A3A3A] hover:text-[#525252] transition-colors"
-            aria-label="制作の番外編（フィールドノート）"
-            title="制作秘話"
+            className="text-[#F97316] hover:text-[#FB923C] transition-colors font-semibold"
           >
-            ©
-          </Link>{" "}
-          2025 Basketball Score
+            開発秘話
+          </Link>
+        </div>
+
+        {/* Copyright */}
+        <p className="text-center text-xs text-[#525252]">
+          © 2025 Basketball Score
         </p>
       </div>
     </footer>

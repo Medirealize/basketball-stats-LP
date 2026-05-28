@@ -66,8 +66,8 @@ export default async function FieldNoteArticlePage({ params }: PageProps) {
 
         <aside className="mt-12 rounded-xl border border-dashed border-[#F97316]/30 bg-[#1A1A1A]/50 p-5 text-sm text-[#737373]">
           <p>
-            この記事は公開用の制作メモです。環境変数・RLS・デプロイの実値は意図的に省略しています。
-            同じプロンプトを別の Claude Code に渡しても、ここまでの「迷い」は再現されません。
+            この記事は手順書ではなく、意思決定の記録です。ボタン配置や言葉選びの背景を中心に書いています。
+            同じツールを使っても、現場の文脈と判断基準まで同じにはなりません。
           </p>
         </aside>
 
