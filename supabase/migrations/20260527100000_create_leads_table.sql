@@ -11,6 +11,8 @@ create table if not exists public.leads (
 
 alter table public.leads enable row level security;
 
+grant select, insert, update, delete on table public.leads to anon, authenticated;
+
 drop policy if exists "Allow anonymous lead insert" on public.leads;
 create policy "Allow anonymous lead insert"
 on public.leads
