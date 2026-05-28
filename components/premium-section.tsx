@@ -85,7 +85,7 @@ export function PremiumSection() {
             asChild
             className="w-full bg-[#FBBF24] hover:bg-[#F59E0B] text-[#0D0D0D] font-bold rounded-2xl py-6 text-base gold-glow"
           >
-            <a href="https://bscore.medirealize.jp/ja/login">プレミアムを試す</a>
+            <a href="https://bscore.medirealize.jp/ja/login?mode=signup">プレミアムを試す</a>
           </Button>
         </div>
       </div>
